@@ -126,6 +126,12 @@ html {
         padding:5px;
         width:fit-content;
     }
+    .vidBox{
+      border:#ffffff solid 3px;
+      background-color:#585858;
+      margin: 0 auto;
+      width:fit-content;
+  }
     .spacer{
         padding:30px;
     }
