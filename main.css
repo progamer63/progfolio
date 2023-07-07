@@ -135,6 +135,15 @@ html {
     .spacer{
         padding:30px;
     }
+    .spacerHalf{
+      padding:15px;
+  }
+  .whiteText{
+    color: white;
+  }
+  .textLeft{
+    text-align: left;
+  }
     #nav ul {
         list-style-type: none;
       }
