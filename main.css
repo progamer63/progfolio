@@ -192,3 +192,7 @@ html {
       .item:hover{
         color:#ff67c5;
       }
+      #shortsTab td{
+        color:white;
+        padding: 5px;
+      }
