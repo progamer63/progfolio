@@ -2,6 +2,7 @@ html {
         min-height: 100%;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
     body {
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -97,11 +98,23 @@ html {
         background-image:linear-gradient(90deg, rgba(255,35,117,1) 30%, rgba(255,95,246,1) 50%, rgba(129,197,247,1) 60%, rgba(129,154,255,1) 80%, rgba(29,29,255,1) 100%);
         background-size:auto;
         background-clip:text;
+        background-repeat:no-repeat; 
         -webkit-background-clip:text;
         -webkit-text-fill-color:transparent;
         -moz-background-clip: text;
         -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color:white;
+    }
+    .gradtextSmall{
+      background-image:linear-gradient(90deg, rgba(255,76,206,1) 0%, rgba(115,171,226,1) 50%, rgba(178,157,247,1) 100%);
+      background-size:auto;
+      background-clip:text;
+      background-repeat:no-repeat; 
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      -moz-background-clip: text;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color:white;
     }
     .imgs{
         display:flex;
@@ -171,21 +184,21 @@ html {
         text-decoration: none;
         list-style-type: none;
       }
-      #contact h4{
+      #contact h4, #socials h4{
         position:relative;
         display:block;
       }
-      #contact .social {
+      #contact .social, #socials .social{
         text-decoration-line: underline;
-        text-decoration-color:white;
+        text-decoration-color:white;  
       }
-      #contact .social:hover{
+      #contact .social:hover, #socials .social:hover{
         text-decoration-color:#ff67c5;
       }
-      #contact a h4:hover{
+      #contact a h4:hover, #socials a h4:hover{
         color:#ff67c5;
       }
-      #contact ul{
+      #contact ul {
         list-style:none;
         padding-left:0;
       }
@@ -195,4 +208,22 @@ html {
       #shortsTab td{
         color:white;
         padding: 5px;
+      }
+      #infoBox {
+        display:flex;
+        flex-flow: row wrap;
+        width:95%;
+        justify-content: center;
+        flex:5;
+      }
+      .infoBoxItem {
+        padding:0px 20px 0px 20px;
+        width:400px;
+      }
+      .listOfSocials {
+        text-align:center;
+        justify-content:center;
+      }
+      .listOfSocials li {
+        margin-left:-35px;
       }
