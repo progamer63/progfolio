@@ -5,6 +5,13 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <meta property="og:title" content="progfolio">
     <meta property="og:description" content="prog's photography portfolio. its really cool">
+    <script type = "text/javascript">
+        function disableRightClick() 
+        { 
+        alert("nope"); 
+        return false; 
+        } 
+    </script>
 </head>
 <body>
 <div id="title">
@@ -30,8 +37,10 @@
 </div>
 </div>
 <h2 id="about" class="center">this page is meant to be an archive of sorts of my work <br></h2>
-<div class="aboutMeCont">
+<div class="aboutMeCont" oncontextmenu="return disableRightClick() ;">
         <div class="imgs center aboutMeChi">
+            <div class="photo"><img src="files/1380comp.jpg"></div>
+            <div class="photo"><img src="files/1383comp.jpg"></div>
             <div class="photo"><img src="files/1292comp.jpg"></div>
             <div class="photo"><img src="files/1227comp.jpg"></div>
             <div class="photo"><img src="files/1317comp.jpg"></div>
