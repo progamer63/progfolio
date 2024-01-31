@@ -10,7 +10,15 @@
         { 
         alert("nope"); 
         return false; 
-        } 
+        }
+        function copy(txt) {
+            var input = document.createElement('input');
+            input.value = txt;
+            document.body.append(input);
+            input.select();
+            document.execCommand('copy');
+            input.remove();
+          } 
     </script>
 </head>
 <body>
@@ -39,7 +47,7 @@
 
 <h2 id="about" class="center">welcome to my portfolio, i made it myself. could you tell?<br>below are my more recent works</h2>
 
-<div class="aboutMeCont" oncontextmenu="return disableRightClick() ;">
+<div class="aboutMeCont" oncontextmenu="return disableRightClick() ;" onclick="copy(this.src);">
         <div class="imgs center aboutMeChi">
         <div class="photo"><img src="files/1405ecomp.jpg"></div>
         <div class="photo"><img src="files/1410comp.jpg"></div>
