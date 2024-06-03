@@ -32,6 +32,10 @@ html {
         font-size: 15pt;
         color:white;
     }
+    .clickable:hover {
+      color:lightskyblue;
+      text-decoration: underline;
+    }
     #about{
         margin-top:none;
         border:#ffffff solid 3px;
