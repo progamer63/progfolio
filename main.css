@@ -33,7 +33,7 @@ html {
         color:white;
     }
     .clickable:hover {
-      color:lightskyblue;
+      color:#87cefa;
       text-decoration: underline;
     }
     #about{
