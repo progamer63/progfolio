@@ -248,18 +248,17 @@ html {
         margin-left:-35px;
       }
 
-ul.cardSocials{
-  list-style-type: none;
-  margin:0;
-  padding:0;
-  overflow:hidden;
-}
-.cardSocialsItem {
-  float:left;
-}
-.cardSocialsItem a {
-  display:block;
-  text-align:center;
-  padding:0 12px 0 12px;
-
-}
+      ul.cardSocials{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+      }
+      .cardSocialsItem {
+        float:left;
+      }
+      .cardSocialsItem a {
+        display:block;
+        text-align:center;
+        padding:0 12px 0 12px;
+      }
