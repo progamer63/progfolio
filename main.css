@@ -247,11 +247,13 @@ html {
       .listOfSocials li {
         margin-left:-35px;
       }
-      .cardSocials ul {
-        list-style-type: none;
+      .cardSocials {
         margin:0;
         padding:0;
         overflow:hidden;
+      }
+      .cardSocials ul {
+        list-style-type: none;
       }
       .cardSocialsItem {
         float:left;
