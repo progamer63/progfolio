@@ -247,8 +247,7 @@ html {
       .listOfSocials li {
         margin-left:-35px;
       }
-
-      ul.cardSocials{
+      .cardSocials ul {
         list-style-type: none;
         margin:0;
         padding:0;
