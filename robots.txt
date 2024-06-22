@@ -1,3 +1,60 @@
 # block openai lmao u cant steal my shit
 User-agent: GPTBot
 Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+# yk what fuck the rest of the ai crawlers
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: Claude-User
+Disallow: /
+User-agent: CCbot
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: PiplBot
+Disallow: /
+
+# fuck perplexity in particular
+User-agent: PerplexityBot
+Disallow: /
+
+# thanks NYT for the rest
+User-agent: Amazonbot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: DataForSeoBot
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: magpie-crawler
+Disallow: /
+User-agent: NewsNow
+Disallow: /
+User-agent: news-please
+Disallow: /
+User-agent: omgili
+Disallow: /
+User-agent: omgilibot
+Disallow: /
+User-agent: peer39_crawler
+User-agent: peer39_crawler/1.0
+Disallow: /
+User-agent: Scrapy
+Disallow: /
+User-agent: TurnitinBot
+Disallow: /
+
