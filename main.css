@@ -286,3 +286,6 @@ html {
         -webkit-text-fill-color:transparent;
         -moz-background-clip: text;
       }
+      .aDot:visited {
+        color: white;
+      }
