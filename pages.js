@@ -37,13 +37,16 @@ const pages = {
     i collect vinyl, cds, and recently some dvds. check my <a target="_blank" rel="noopener noreferrer" href="https://www.discogs.com/user/progamer63/collection">discogs</a>!`,
     games:`i play video games yes i do that<br class="spacer">
     some i play: ultrakill, sledding game, flock around, beamng.drive, minecraft, mini motorways, upload labs, bloons td6, balatro, trackmania,
-    skate 3`,
+    skate 3<br class="spacer">
+    i did recently get a steam deck, and that's really changed how i play games. i find myself enjoying what i play more on deck than on my pc. it's really nice to have a do everything device like that.<br>
+    it's loaded with emulators and roms, and around 50 games from my steam library. it's great for killing time while out waiting, or for relaxing anywhere i want to.<br class="spacer">
+    i might get the steam controller. can't really justify $100 on a controller i might not like. i want the trackpads, but idk.`,
     old: `there is a need to keep some old stuff from my legacy site on here. in case you are trying to access any of these, they still exist a little.<br class="spacer">
     these pages are based on an old codebase, so the visual style will be very much different. i might update them one day,
     but for now they exist like this.`,
     photos: `
-    occasionally, i do some photography. i have a canon t8i with the stock kit lens.<br>
-    i also have a 300mm something lens for it. i don't take photos that often anymore, a lot of what i have are from a photography class i took a few years ago.
+    occasionally, i do some photography. usually, i just have my phone. however, i do have a canon t8i with the stock kit lens. i also have a 300mm something lens for it.<br>
+    i don't take photos that often anymore, a lot of what i have are from a photography class i took a few years ago.
     <br class=spacer>
     <div id="photogrid" oncontextmenu="return disableRightClick();">
     <div class="photo"><img class="photo" src="files/takanaka1.jpg"></div>
