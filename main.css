@@ -44,7 +44,7 @@ body {
     text-align:left;
     text-underline-offset: 4px;
     color:white;
-    font-size:clamp(16pt, 2vw, 48pt);
+    font-size:clamp(16pt, 2vw, 24pt);
 }
 
 #nav h3{
@@ -104,10 +104,12 @@ img#logo {
 
 #rightpanel {
     position:sticky;
+    position:relative;
     grid-column:3;
     right: 0;
     top: 0;
     height: calc(100vh - 30px);
+    margin: 15px 15px 15px 15px;
     box-sizing: border-box;
     border: 10px dashed rgba(63,63,63,0.6);
 }
@@ -119,7 +121,7 @@ img#logo {
     align-self:flex-start;
 }
 
-br {
+br.spacer {
     display:block;
     margin-bottom:2em;
 }

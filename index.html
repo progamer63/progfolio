@@ -3,6 +3,7 @@
 <head>
     <title>prog.gay</title>
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="lastfm.css" type="text/css">
     <meta property="og:title" content="prog.gay">
     <meta property="og:url" content="https://prog.gay/">
     <meta property="og:description" content="&#10;they/it/any&#10;i vibe :3">
@@ -21,7 +22,6 @@
             height: 0;
         }
     </style>
-    <script src="main.js"></script>
 </head>
 <body>
 <div id="bg"></div>
@@ -29,8 +29,10 @@
     <div id="nav">
         <img src="site-images/leacrop2w.jpg" id="logo">
         <a href="/about.html"><h3>about me</h3></a>
+        <a href="/greets.html"><h3>greets</h3></a>
         <a href="/lab.html"><h3>homelab</h3></a>
         <a href="/photos.html"><h3>photos</h3></a>
+        <a href="/music.html"><h3>music</h3></a>
         <a href="/others.html"><h3>others</h3></a>
     </div> 
 </div>
@@ -38,8 +40,9 @@
     <div id="title"><h1 class="gradient header">prog.gay</h1></div>
     <h2 id="about">
     welcome to my website! it's mostly a site to do fun things with, but i also have
-    a photography portfolio here.<br>
-    currently, i have an interest in homelabbing. check the homelab page on the side to see more about it!
+    a photography portfolio here.<br class="spacer">
+    currently, i have an interest in homelabbing. check the homelab page on the side to see more about it!<br>
+    i also listen to a lot of music. check the music page for more.
     </h2>
     <div id="socials">
         <a href="https://bsky.app/profile/prog.gay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bluesky.svg"></a>
@@ -47,5 +50,15 @@
         <a href="https://github.com/progamer63"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg"></a>
     </div>
 </div>
-<div id="rightpanel"></div>
+<div id="rightpanel">
+    <div id="lastfmwidget">
+        <h2>now listening to:</h2>
+        <div id="songInfo">
+            <div id="song">correct horse battery staple</div>
+            <div id="artist">if nothing shows, something broke</div>
+        </div>
+    </div>
+    <script src="fetch.js"></script>
+    </div>
+</div>
 </body>

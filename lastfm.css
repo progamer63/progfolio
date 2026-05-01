@@ -1,0 +1,42 @@
+#lastfmwidget {
+    margin:auto;
+    width:90%;
+    border:white;
+    font-family:Inter;
+    font-weight:625;
+    font-size:24px;
+    text-align:left;
+    --image-color:#000000;
+    --image-color-darker:#000000;
+    --title-length:0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#lastfmwidget h2{
+    color:white;
+    order:1;
+    margin:0;
+}
+
+#songInfo {
+    white-space:normal;
+    overflow:wrap;
+    color:white;
+}
+
+#song {
+    font-size:clamp(14px, calc(96px * (1/var(--title-length))*8), 48px);
+    order:2;
+}
+
+#artist {
+    font-weight:400;
+    font-size:28px;
+    order:3;
+}
