@@ -1,0 +1,152 @@
+html {
+        min-height:100%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns: 25vw 50vw 25vw;
+}
+
+#bg {
+    position:fixed;
+    inset:-15px;
+    background-image:url(site-images/wallpaper\ debian.png);
+    background-position:center;
+    background-size:cover;
+    filter:blur(5px) brightness(0.5);
+    z-index:-99;
+}
+
+#title {
+    margin:0;
+    text-align:center;
+    font-size:64px;
+}
+
+#title h1 {
+    margin:0;
+    margin-bottom:10vh;
+}
+
+#nav {
+    display: flex;
+    flex-direction:column;
+    padding:25%;
+    z-index: 10;
+}
+
+#nav a{
+    text-decoration:underline;
+    text-align:left;
+    text-underline-offset: 4px;
+    color:white;
+    font-size:clamp(16pt, 2vw, 48pt);
+}
+
+#nav h3{
+    color:white;
+    transition: color 0.2s ease;
+}
+
+#nav h3:hover{
+    color:rgb(246, 132, 240);
+    transition: color 0.2s ease;
+}
+
+img#logo {
+    width:12vw;
+    border: solid white 2px;
+}
+
+.gradient {
+    background-image:linear-gradient(90deg, rgba(255,35,117,1) 30%, rgba(255,95,246,1) 50%, rgba(129,197,247,1) 60%, rgba(129,154,255,1) 80%, rgba(29,29,255,1) 100%);
+    background-size:auto;
+    background-clip:text;
+    background-repeat:no-repeat; 
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -moz-background-clip: text;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color:white;
+}
+
+.gap {
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#centerpanel {
+    display:flex;
+    grid-column:2;
+    position: relative;
+    margin:15px;
+    box-sizing: border-box;
+    z-index: 1;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+#leftpanel {
+    position:sticky;
+    grid-column:1;
+    left: 0;
+    top: 0;
+    height: calc(100vh - 30px);
+    margin: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    border: 10px dashed rgba(63,63,63,0.6);
+}
+
+#rightpanel {
+    position:sticky;
+    grid-column:3;
+    right: 0;
+    top: 0;
+    height: calc(100vh - 30px);
+    box-sizing: border-box;
+    border: 10px dashed rgba(63,63,63,0.6);
+}
+
+#about {
+    width:fit-content;
+    color:white;
+    font-size:32px;
+    align-self:flex-start;
+}
+
+br {
+    display:block;
+    margin-bottom:2em;
+}
+
+#socials {
+    position:static;
+    transform:none;
+    display: flex;
+    gap: 32px;
+    box-sizing: border-box;
+    border: 10px dashed rgba(63,63,63,0.6);
+    width: fit-content;
+    padding:10px;
+    margin-top:auto;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+#socials img {
+    width:72px;
+    height:72px;
+    opacity: 0.75;
+    filter:grayscale(1);
+    transition: all 0.2s ease;
+}
+
+#socials img:hover {
+    filter:grayscale(0);
+    opacity: 1;
+}
