@@ -4,6 +4,7 @@
     <title>prog.gay</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="lastfm.css" type="text/css">
+    <script src="pages.js"></script>
     <meta property="og:title" content="prog.gay">
     <meta property="og:url" content="https://prog.gay/">
     <meta property="og:description" content="&#10;they/it/any&#10;i vibe :3">
@@ -28,16 +29,19 @@
 <div id="leftpanel">
     <div id="nav">
         <img src="site-images/leacrop2w.jpg" id="logo">
-        <a href="/about.html"><h3>about me</h3></a>
-        <a href="/greets.html"><h3>greets</h3></a>
-        <a href="/lab.html"><h3>homelab</h3></a>
-        <a href="/photos.html"><h3>photos</h3></a>
-        <a href="/music.html"><h3>music</h3></a>
-        <a href="/others.html"><h3>others</h3></a>
+        <a onclick="navigate('home')"><h3>home</h3></a>
+        <a onclick="navigate('lab')"><h3>homelab</h3></a>
+        <a onclick="navigate('photos')"><h3>photos</h3></a>
+        <a onclick="navigate('music')"><h3>music</h3></a>
+        <a onclick="navigate('games')"><h3>games</h3></a>
+        <a onclick="navigate('greets')"><h3>greets</h3></a>
     </div> 
 </div>
 <div id="centerpanel">
-    <div id="title"><h1 class="gradient header">prog.gay</h1></div>
+    <div id="title">
+        <h1 class="gradient header">prog.gay</h1>
+        <h2 id="splash">brand new!</h2>
+   </div>
     <h2 id="about">
     welcome to my website! it's mostly a site to do fun things with, but i also have
     a photography portfolio here.<br class="spacer">
@@ -52,13 +56,14 @@
 </div>
 <div id="rightpanel">
     <div id="lastfmwidget">
+    <script src="fetch.js"></script>
         <h2>now listening to:</h2>
         <div id="songInfo">
-            <div id="song">correct horse battery staple</div>
+            <div id="album">correct horse battery staple</div>
+            <div id="song">guh?</div>
             <div id="artist">if nothing shows, something broke</div>
         </div>
     </div>
-    <script src="fetch.js"></script>
     </div>
 </div>
 </body>

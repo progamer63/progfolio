@@ -3,14 +3,15 @@ function fetchinfo() {
     let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
     let song = document.querySelector('#song');
     let artist = document.querySelector('#artist');
+    let album = document.querySelector('#album');
     /*let art = document.querySelector('#albumArt');*/
     let maxlen = 54;
     fetch(url)
     .then(function (response) {
         return response.json();
     }).then(function (json) {
-        console.log(json);
         if ('@attr' in json['track']) {
+            album.innerHTML = json['track']['album']['#text'];
             song.innerHTML = json['track']['name'];
             if (song.innerHTML.length >= maxlen) {
                 song.innerHTML = song.innerHTML.substring(0, maxlen);
@@ -23,8 +24,9 @@ function fetchinfo() {
             /*let imurlwork = json['track']['image'][3]['#text'];*/
             /*document.getElementById("all").style.backgroundImage="url("+imurlwork+")";*/
         } else {
-            song.innerHTML = "nothing atm";
-            artist.innerHTML = "probably busy lol";
+            album.innerHTML = "";
+            song.innerHTML = "";
+            artist.innerHTML = "nothing atm";
             document.documentElement.style.setProperty("--title-length", 16);
             /*document.getElementById("realArt").src = "https://img.icons8.com/?size=512&id=9414&format=png&color=FFFFFF";*/  
         }

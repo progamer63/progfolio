@@ -1,6 +1,6 @@
 #lastfmwidget {
     margin:auto;
-    width:90%;
+    width:98%;
     border:white;
     font-family:Inter;
     font-weight:625;
@@ -25,6 +25,7 @@
 }
 
 #songInfo {
+    margin-top:5px;
     white-space:normal;
     overflow:wrap;
     color:white;
@@ -33,10 +34,19 @@
 #song {
     font-size:clamp(14px, calc(96px * (1/var(--title-length))*8), 48px);
     order:2;
+    margin:0;
 }
 
 #artist {
     font-weight:400;
     font-size:28px;
     order:3;
+    margin:0;
+}
+
+#album {
+    font-weight:300;
+    font-size:22px;
+    order:4;
+    margin:0;
 }
