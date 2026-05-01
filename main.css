@@ -23,25 +23,31 @@ body {
 
 #title {
     margin:0;
+    padding:0;
     text-align:center;
     font-size:64px;
 }
 
 #title h1 {
     margin:0;
-    margin-bottom:10vh;
     z-index:2;
+}
+
+@keyframes splash-animate {
+    0%  { transform: rotate(-22deg) scale(1); }
+    50% { transform: rotate(-22deg) scale(0.5); }
+    100% { transform: rotate(-22deg) scale(1); }
 }
 
 #splash {
     position:relative;
-    rotate:-22deg;
-    top:-45%;
+    top:-25%;
     right:-40%;
     font-size:36px;
     color:rgba(255, 227, 45, 1);
     font-family:'Comic Sans MS';
     text-shadow: 0 0 15px;
+    animation: splash-animate 1s infinite ease;
 }
 
 #nav {
@@ -93,15 +99,17 @@ img#logo {
 }
 
 #centerpanel {
-    display:flex;
-    grid-column:2;
+    display: flex;
+    grid-column: 2;
     position: relative;
-    margin:15px;
+    margin: 15px;
     box-sizing: border-box;
     z-index: 1;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 30px);
+    overflow: hidden;
 }
 
 #leftpanel {
@@ -127,11 +135,38 @@ img#logo {
     border: 10px dashed rgba(63,63,63,0.6);
 }
 
+@keyframes fade {
+    0% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+#about.switching {
+    animation: fade 0.5s ease;
+}
+
 #about {
-    width:fit-content;
-    color:white;
-    font-size:32px;
-    align-self:flex-start;
+    position: static;
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    align-self: flex-start;
+    overflow-y: auto;
+    flex: 1; 
+    scrollbar-width: none;
+    margin:0;
+    mask-image: linear-gradient(
+    to bottom,
+    transparent 0px,
+    black 10px,
+    black calc(100% - 20px),
+    transparent 100%
+);
+
+}
+
+#about::-webkit-scrollbar {
+    width: 0;
 }
 
 br.spacer {
@@ -140,17 +175,20 @@ br.spacer {
 }
 
 #socials {
-    position:static;
-    transform:none;
+    position: sticky;
+    bottom: 0;
+    transform: none;
     display: flex;
     gap: 32px;
     box-sizing: border-box;
     border: 10px dashed rgba(63,63,63,0.6);
     width: fit-content;
-    padding:10px;
-    margin-top:auto;
-    flex-wrap:wrap;
+    padding: 10px;
+    flex-wrap: wrap;
     justify-content: center;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
+    align-self: center;
 }
 
 #socials img {
@@ -161,9 +199,36 @@ br.spacer {
     transition: all 0.2s ease;
 }
 
+#socials a {
+    position:relative;
+}
+
+#socials a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 18px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+
+#socials a:hover::after {
+    opacity: 1;
+}
+
 #socials img:hover {
     filter:grayscale(0);
     opacity: 1;
+    transform:scale(1.1);
 }
 
 a {
@@ -172,4 +237,36 @@ a {
     text-underline-offset: 4px;
     color:white;
     font-size:32px;
+}
+
+#info {
+    position:absolute;
+    top:0;
+    right:15px;
+    text-align:right;
+    color:rgba(255, 255, 255, 0.4);
+    margin:0 auto;
+}
+
+#copyright {
+    font-size:18px;
+}
+
+#updated {
+    font-size:14px;
+}
+
+#photogrid {
+    columns: 2;
+    box-sizing: border-box;
+    gap: 15px;
+    width:100%;
+}
+
+#photogrid img {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    border: solid white 2px;
+    box-sizing: border-box;
 }

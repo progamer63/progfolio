@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="lastfm.css" type="text/css">
     <script src="pages.js"></script>
+    <link rel="icon" type="image/png" href="site-images/leacrop2w.jpg" />
     <meta property="og:title" content="prog.gay">
     <meta property="og:url" content="https://prog.gay/">
     <meta property="og:description" content="&#10;they/it/any&#10;i vibe :3">
@@ -23,8 +24,15 @@
             height: 0;
         }
     </style>
+    <script type="text/javascript">
+        function disableRightClick() 
+        { 
+        alert("nope"); 
+        return false; 
+        }
+    </script>
 </head>
-<body>
+<body onload="navigate('home')">
 <div id="bg"></div>
 <div id="leftpanel">
     <div id="nav">
@@ -42,22 +50,22 @@
         <h1 class="gradient header">prog.gay</h1>
         <h2 id="splash">brand new!</h2>
    </div>
-    <h2 id="about">
-    welcome to my website! it's mostly a site to do fun things with, but i also have
-    a photography portfolio here.<br class="spacer">
-    currently, i have an interest in homelabbing. check the homelab page on the side to see more about it!<br>
-    i also listen to a lot of music. check the music page for more.
-    </h2>
+    <h2 id="about"></h2>
     <div id="socials">
-        <a href="https://bsky.app/profile/prog.gay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bluesky.svg"></a>
-        <a href="https://proggay.tumblr.com/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/tumblr.svg"></a>
-        <a href="https://github.com/progamer63"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="bluesky" href="https://bsky.app/profile/prog.gay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bluesky.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="steam" href="https://steamcommunity.com/id/progdotgay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="tumblr" href="https://proggay.tumblr.com/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/tumblr.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="github" href="https://github.com/progamer63"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg"></a>
     </div>
 </div>
 <div id="rightpanel">
+    <div id="info">
+        <h2 id="copyright">©2026 prog.gay</h2>
+        <h2 id="updated">updated: 5/1/2026</h2>
+    </div>
     <div id="lastfmwidget">
     <script src="fetch.js"></script>
-        <h2>now listening to:</h2>
+        <h2 id="tag">uno momento</h2>
         <div id="songInfo">
             <div id="album">correct horse battery staple</div>
             <div id="song">guh?</div>

@@ -18,7 +18,7 @@
     flex-direction: column-reverse;
 }
 
-#lastfmwidget h2{
+#tag {
     color:white;
     order:1;
     margin:0;
@@ -32,7 +32,7 @@
 }
 
 #song {
-    font-size:clamp(14px, calc(96px * (1/var(--title-length))*8), 48px);
+    font-size:clamp(14px, calc(96px * (1/var(--title-length))*12), 52px);
     order:2;
     margin:0;
 }
