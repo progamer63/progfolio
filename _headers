@@ -1,4 +1,4 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://lastcollage.io https://cdn.jsdelivr.net https://selfhst.github.io; connect-src 'self' https://lastfm-last-played.biancarosa.com.br; font-src 'self'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://lastcollage.io https://cdn.jsdelivr.net https://selfhst.github.io; connect-src 'self' https://lastfm-last-played.biancarosa.com.br https://cloudflareinsights.com; font-src 'self'; frame-ancestors 'none';
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
