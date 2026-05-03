@@ -69,3 +69,21 @@
         font-size:20px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #tag {
+        font-size:16px;
+    }
+    
+    #artist {
+        font-size:12px;
+    }
+
+    #song {
+        font-size:22px;
+    }
+
+    #album {
+        font-size:14px;
+    }
+}

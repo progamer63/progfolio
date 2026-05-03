@@ -284,7 +284,7 @@ a:hover {
     padding:0;
     z-index: 10;
     justify-content:center;
-    align-items:center;
+    align-items:left;
     height:75%;
 }
 
@@ -320,6 +320,22 @@ a:hover {
     box-sizing: border-box;
 }
 
+#changes {
+    text-align:left;
+    font-size:32px;
+}
+
+#changes ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#changes li {
+    font-size:28px;
+    padding:5px;
+}
+
 @media screen and (max-width: 1350px) {
     #title {
         font-size:32px;
@@ -345,30 +361,36 @@ a:hover {
         font-size:24px;
     }
 
-    #socials {
-        gap:16px;
-    }
-    #socials img {
-        width:36px;
-        height:36px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
-    .widget {
-        font-size:18px;
+    body {
+        grid-template-columns: 25vw 50vw 25vw;
     }
 
-    #albumcovers h2 {
-        font-size:12px;
+    #socials {
+        gap:24px;
+    }
+
+    #socials img {
+        width:64px;
+        height:64px;
+    }
+
+    .widget {
+        font-size:14px;
     }
 }
 
 @media screen and (max-width: 800px) {
     body {
-        grid-template-columns: 30vw 70vw;
+        grid-template-columns: 30vw 70vw ;
     }
-    
+
+    #rightpanel {
+        display:none;
+    }
+
     img#logo {
         width: 8vw;
     }
@@ -377,7 +399,12 @@ a:hover {
         font-size:18px;
     }
 
-    #rightpanel {
-        display:none;
+    #socials {
+        gap:12px;
+    }
+
+    #socials img {
+        width:52px;
+        height:52px;
     }
 }

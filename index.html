@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="lastfm.css" type="text/css">
     <script src="pages.js"></script>
+    <script src="splash.js"></script>
     <link rel="icon" type="image/png" href="site-images/leacrop2w.jpg" />
     <meta property="og:title" content="prog.gay">
     <meta property="og:url" content="https://prog.gay/">
@@ -32,7 +33,7 @@
         }
     </script>
 </head>
-<body onload="navigate('home')">
+<body onload="navigate('home'); newSplash();">
 <div id="bg"></div>
 <div id="leftpanel">
     <div id="nav">
@@ -48,7 +49,7 @@
 <div id="centerpanel">
     <div id="title">
         <h1 class="gradient header">prog.gay</h1>
-        <h2 id="splash">brand new!</h2>
+        <h2 id="splash""></h2>
    </div>
     <h2 id="about"></h2>
     <div id="socials">
@@ -63,14 +64,35 @@
 <div id="rightpanel">
     <div id="info">
         <h2 id="copyright">©2026 prog.gay</h2>
-        <h2 id="updated">updated: 5/1/2026</h2>
+        <h2 id="updated">updated: 5/2/2026</h2>
     </div>
     <div id="widgets">
-        <div class="widget"><h2>one day there will be more widgets over here</h2></div>
+        <div class="widget">
+            <h2>one day there will be widgets over here</h2>
+        </div>
+        <div class="widget">
+            <h2 id="changes">
+                5/2/2026:
+                <ul>
+                    <li>+ more splashes</li>
+                    <li>- albumcovers (for now)</li>
+                </ul>
+                5/1/2026:
+                <ul>
+                    <li>new codebase!</li>
+                    <li>everything is new!</li>
+                </ul>
+            </h2>
+        </div>
+        <!-- this was a good idea but i need to figure out ci/cd to do this myself i think
+            lastcollage dont retain images for more than a few hours (good thing)
+            simplest solution is to just make an action to download the updated
+            image weekly & throw it in site-images probably
         <div id="albumcovers" class="widget">
             <h2>recent top albums</h2>
             <img src="https://lastcollage.io/api/collage/0d128055df13872d47fa20e5b358165edf59cb43">
         </div>
+        -->
     </div>
     <div id="lastfmwidget">
     <script src="fetch.js"></script>
