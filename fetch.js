@@ -16,6 +16,7 @@ function fetchinfo() {
             tag.innerHTML = "last listened to:";
         }
         album.innerHTML = json['track']['album']['#text'];
+        document.documentElement.style.setProperty("--album-length", album.innerHTML.length);
         song.innerHTML = json['track']['name'];
         if (song.innerHTML.length >= maxlen) {
             song.innerHTML = song.innerHTML.substring(0, maxlen);

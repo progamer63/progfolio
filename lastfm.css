@@ -9,6 +9,7 @@
     --image-color:#000000;
     --image-color-darker:#000000;
     --title-length:0;
+    --title-length:album;
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -16,13 +17,15 @@
     height: auto;
     display: flex;
     flex-direction: column-reverse;
+    max-height:15%;
 }
 
 #tag {
     color:white;
     order:1;
     margin:0;
-    font-size:36px;
+    /*font-size:36px;*/
+    font-size:2vh;
 }
 
 #songInfo {
@@ -33,57 +36,43 @@
 }
 
 #song {
-    font-size:clamp(14px, calc(96px * (1/var(--title-length))*12), 52px);
+    /*font-size:clamp(14px, calc(96px * (1/var(--title-length))*12), 52px);*/
+    font-size:3vh;
     order:2;
     margin:0;
 }
 
 #artist {
     font-weight:400;
-    font-size:28px;
+    /*font-size:28px;*/
+    font-size:3vh;
     order:3;
     margin:0;
 }
 
 #album {
     font-weight:300;
-    font-size:22px;
+    /*font-size:22px;*/
+    font-size:2vh;
     order:4;
     margin:0;
 }
-
+/*
 @media screen and (max-width: 1350px) {
     #tag {
-        font-size:24px;
+        font-size:6cqw;
     }
     
     #artist {
-        font-size:16px;
+        font-size:5cqw;
     }
 
     #song {
-        font-size:28px;
+        font-size:10cqw;
     }
 
     #album {
-        font-size:20px;
+        font-size:6cqw;
     }
 }
-
-@media screen and (max-width: 1000px) {
-    #tag {
-        font-size:16px;
-    }
-    
-    #artist {
-        font-size:12px;
-    }
-
-    #song {
-        font-size:22px;
-    }
-
-    #album {
-        font-size:14px;
-    }
-}
+*/

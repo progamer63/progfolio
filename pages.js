@@ -60,5 +60,24 @@ const pages = {
     <div class="photo"><img src="files/13comp.jpg"></div>
     <div class="photo"><img src="files/0994comp.jpg"></div>
     <div class="photo"><img src="files/3comp.jpg"></div>
-    </div>`
+    </div>`,
+    changes:`
+    <h2 id="changes">
+        5/3/2026:
+        <ul>
+            <li>move changes to own page</li>
+            <li>adjusted sizing in general</li>
+            <li>try to fix on 1080p, classic 4k monitor issue</li>
+        </ul>
+        5/2/2026:
+        <ul>
+            <li>+ more splashes</li>
+            <li>- albumcovers (for now)</li>
+        </ul>
+        5/1/2026:
+        <ul>
+            <li>new codebase!</li>
+            <li>everything is new!</li>
+        </ul>
+    </h2>`
 }

@@ -53,8 +53,10 @@ body {
 #nav {
     display: flex;
     flex-direction:column;
-    padding:25%;
+    padding:12.5%;
     z-index: 10;
+    height: 85vh;
+    justify-content: space-evenly;
 }
 
 #nav a {
@@ -68,6 +70,8 @@ body {
 #nav h3{
     color:white;
     transition: color 0.2s ease;
+    margin:0;
+
 }
 
 #nav h3:hover{
@@ -77,7 +81,7 @@ body {
 }
 
 img#logo {
-    width:12vw;
+    width:100%;
     border: solid white 2px;
 }
 
@@ -114,6 +118,7 @@ img#logo {
 
 #leftpanel {
     position:sticky;
+    position:relative;
     grid-column:1;
     left: 0;
     top: 0;
@@ -285,7 +290,10 @@ a:hover {
     z-index: 10;
     justify-content:center;
     align-items:left;
-    height:75%;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+    padding-top:50px;
 }
 
 .widget {
@@ -293,7 +301,7 @@ a:hover {
     text-align:left;
     color:white;
     font-size:32px;
-    margin:25px;
+    margin:10px 25px;
 }
 
 #albumcovers {
@@ -322,7 +330,7 @@ a:hover {
 
 #changes {
     text-align:left;
-    font-size:32px;
+    font-size:2vw;
 }
 
 #changes ul {
@@ -332,7 +340,7 @@ a:hover {
 }
 
 #changes li {
-    font-size:28px;
+    font-size:1.75vw;
     padding:5px;
 }
 
@@ -363,26 +371,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 1000px) {
-    body {
-        grid-template-columns: 25vw 50vw 25vw;
-    }
-
-    #socials {
-        gap:24px;
-    }
-
-    #socials img {
-        width:64px;
-        height:64px;
-    }
-
-    .widget {
-        font-size:14px;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     body {
         grid-template-columns: 30vw 70vw ;
     }
@@ -391,20 +380,7 @@ a:hover {
         display:none;
     }
 
-    img#logo {
-        width: 8vw;
-    }
-
     #nav a {
-        font-size:18px;
-    }
-
-    #socials {
-        gap:12px;
-    }
-
-    #socials img {
-        width:52px;
-        height:52px;
+        font-size:clamp(18px, 4vw, 48px);
     }
 }
