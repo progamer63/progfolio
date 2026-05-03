@@ -65,6 +65,7 @@ const pages = {
     <h2 id="changes">
         5/3/2026:
         <ul>
+            <li>move logo next to title</li>
             <li>move changes to own page</li>
             <li>adjusted sizing in general</li>
             <li>try to fix on 1080p, classic 4k monitor issue</li>
