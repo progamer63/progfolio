@@ -28,6 +28,7 @@ body {
     font-size:64px;
     z-index:2;
     display:inline-block;
+    margin-bottom:30px;
 }
 
 #title h1 {
