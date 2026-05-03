@@ -26,6 +26,8 @@ body {
     padding:0;
     text-align:center;
     font-size:64px;
+    z-index:2;
+    display:inline-block;
 }
 
 #title h1 {
@@ -34,29 +36,35 @@ body {
 }
 
 @keyframes splash-animate {
-    0%  { transform: rotate(-22deg) scale(1); }
-    50% { transform: rotate(-22deg) scale(0.5); }
-    100% { transform: rotate(-22deg) scale(1); }
+    0%  { transform: rotate(-18deg) scale(1); }
+    50% { transform: rotate(-18deg) scale(0.5); }
+    100% { transform: rotate(-18deg) scale(1); }
 }
 
 #splash {
-    position:relative;
-    top:-25%;
-    right:-40%;
-    font-size:36px;
-    color:rgba(255, 227, 45, 1);
-    font-family:'Comic Sans MS';
+    position: relative;
+    margin-left:12em;
+    margin-top:-1em;
+    vertical-align:top;
+    font-size: 36px;
+    color: rgba(255, 227, 45, 1);
+    font-family: 'Comic Sans MS';
     text-shadow: 0 0 15px;
-    animation: splash-animate 1s infinite ease;
+    animation: splash-animate 2s infinite ease;
+    transform: rotate(-22deg);
+    white-space: nowrap;
+    display: inline-block;
+    z-index:10;
 }
 
 #nav {
     display: flex;
     flex-direction:column;
-    padding:12.5%;
+    padding:0 15px;
     z-index: 10;
     height: 85vh;
     justify-content: space-evenly;
+    margin:0;
 }
 
 #nav a {
@@ -64,7 +72,7 @@ body {
     text-align:left;
     text-underline-offset: 4px;
     color:white;
-    font-size:clamp(16pt, 2vw, 24pt);
+    font-size:clamp(16pt, 3vw, 56pt);
 }
 
 #nav h3{
@@ -80,9 +88,22 @@ body {
     cursor:pointer;
 }
 
-img#logo {
-    width:100%;
+#logo {
+    height:12vh;
     border: solid white 2px;
+    position:absolute;
+    left:0;
+    z-index:1;
+}
+
+#titlerow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 15px;
+    width: 100%;
+    position:relative;
 }
 
 .gradient {
@@ -126,6 +147,9 @@ img#logo {
     margin: 15px 15px 15px 15px;
     box-sizing: border-box;
     border: 10px dashed rgba(63,63,63,0.6);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #rightpanel {
@@ -347,6 +371,10 @@ a:hover {
 @media screen and (max-width: 1350px) {
     #title {
         font-size:32px;
+    }
+
+    #logo {
+        display:none;
     }
 
     #splash {
