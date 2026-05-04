@@ -1,6 +1,6 @@
 #lastfmwidget {
     margin:auto;
-    width:98%;
+    width:95%;
     border:white;
     font-family:Inter;
     font-weight:625;
@@ -57,22 +57,3 @@
     order:4;
     margin:0;
 }
-/*
-@media screen and (max-width: 1350px) {
-    #tag {
-        font-size:6cqw;
-    }
-    
-    #artist {
-        font-size:5cqw;
-    }
-
-    #song {
-        font-size:10cqw;
-    }
-
-    #album {
-        font-size:6cqw;
-    }
-}
-*/

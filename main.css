@@ -355,7 +355,7 @@ a:hover {
 
 #changes {
     text-align:left;
-    font-size:2vw;
+    font-size: 32px;
 }
 
 #changes ul {
@@ -365,13 +365,14 @@ a:hover {
 }
 
 #changes li {
-    font-size:1.75vw;
     padding:5px;
+    font-size: 28px;
 }
 
-@media screen and (max-width: 1350px) {
+/* horizontal devices */
+@media screen and (max-aspect-ratio:3/2) {
     #title {
-        font-size:32px;
+        font-size:64px;
     }
 
     #logo {
@@ -383,15 +384,7 @@ a:hover {
     }
 
     .gradient {
-        background-image:linear-gradient(90deg, rgba(255,35,117,1) 30%, rgba(255,95,246,1) 50%, rgba(129,197,247,1) 60%, rgba(129,154,255,1) 80%, rgba(29,29,255,1) 100%);
-        background-size:auto;
-        background-clip:text;
-        background-repeat:no-repeat; 
-        -webkit-background-clip:text;
-        -webkit-text-fill-color:transparent;
-        -moz-background-clip: text;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color:white;
+        -webkit-text-stroke-width: 4px;
     }
 
     .widget {
@@ -400,7 +393,8 @@ a:hover {
 
 }
 
-@media screen and (max-width: 1200px) {
+/* vertical devices */
+@media screen and (max-aspect-ratio:3/4) {
     body {
         grid-template-columns: 30vw 70vw ;
     }
@@ -411,5 +405,64 @@ a:hover {
 
     #nav a {
         font-size:clamp(18px, 4vw, 48px);
+    }
+}
+
+/* short devices */
+@media screen and (max-height:800px) {
+    #logo {
+        display:none;
+    }
+
+    #title {
+        font-size:48px;
+    }
+
+    .gradient {
+        -webkit-text-stroke-width: 3px;
+    }
+
+    #splash {
+        margin-left:12em;
+        margin-top:-1em;
+        font-size:24px;
+    }
+
+    #socials img {
+        width:48px;
+        height:48px;
+    }
+
+    .widget {
+        font-size:4vh;
+    }
+
+}
+
+/* very short devices */
+@media screen and (max-height:600px) {
+    #lastfmwidget {
+        opacity:0;
+    }
+
+    #socials img {
+        width:36px;
+        height:36px;
+    }
+
+    #splash {
+        display:none;
+    }
+
+    #title {
+        font-size:28px;
+    }
+
+    .gradient {
+        -webkit-text-stroke-width: 2px;
+    }
+
+    #about, #about a {
+        font-size:4vh;
     }
 }

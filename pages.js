@@ -69,6 +69,7 @@ const pages = {
             <li>move changes to own page</li>
             <li>adjusted sizing in general</li>
             <li>try to fix on 1080p, classic 4k monitor issue</li>
+            <li>second attempts to work on vertical devices, short devices, etc</li>
         </ul>
         5/2/2026:
         <ul>
