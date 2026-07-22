@@ -178,6 +178,7 @@ body {
 #about {
     position: static;
     width: 100%;
+    padding-bottom: 5%;
     color: white;
     font-size: 32px;
     align-self: flex-start;
@@ -195,6 +196,24 @@ body {
 
 }
 
+#scrollIndicator {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 22px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+#scrollIndicator.visible {
+    opacity: 1;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(6px); }
+}
 #about::-webkit-scrollbar {
     width: 0;
 }
@@ -353,6 +372,19 @@ a:hover {
     box-sizing: border-box;
 }
 
+#recentMusicDiscoveries h3 {
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+    margin-bottom:20px;
+}
+
+#recentMusicDiscoveries ul {
+    margin-top:0;
+}
+#recentMusicDiscoveries li {
+    font-weight: 400;
+}
+
 #changes {
     text-align:left;
     font-size: 32px;
@@ -362,6 +394,7 @@ a:hover {
     list-style:none;
     margin:0;
     padding:0;
+    margin-bottom:20px;
 }
 
 #changes li {
