@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prog.gay</title>
+    <link rel="stylesheet" href="defcon.css" type="text/css">
+    <link rel="stylesheet" href="lastfm.css" type="text/css">
+    <script src="pagesDC.js"></script>
+    <script src="splashDC.js"></script>
+    <link rel="icon" type="image/png" href="site-images/leacrop2w.jpg" />
+    <meta property="og:title" content="prog.gay">
+    <meta property="og:url" content="https://prog.gay/">
+    <meta property="og:description" content="&#10;they/it/any&#10;i vibe :3">
+    <meta property="og:image" content="https://prog.gay/site-images/wintercrop4.jpg">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta name="theme-color" content="#ffb3b4" data-react-helmet="true">
+    <style>
+        html {
+            overflow-y: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        }
+        html::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        function disableRightClick() 
+        { 
+        alert("nope"); 
+        return false; 
+        }
+    </script>
+</head>
+<body onload="navigate('defcon'); newSplash();">
+<div id="bg"></div>
+<div id="leftpanel">
+    <div id="nav">
+        <a onclick="navigate('defcon')"><h3>defcon</h3></a>
+        <a onclick="navigate('lab')"><h3>homelab</h3></a>
+        <a onclick="navigate('warez')"><h3>warez</h3></a>
+        <a onclick="navigate('changes')"><h3>changes</h3></a>
+        <a href="https://prog.gay"><h3>normal site</h3></a>
+    </div> 
+</div>
+<div id="centerpanel">
+    <div id="titlerow">
+        <img src="site-images/wintercrop4.jpg" id="logo">
+        <div id="title">
+            <h1 class="gradient header">prog.gay</h1>
+            <h2 id="splash""></h2>
+    </div>
+   </div>
+    <h2 id="about"></h2>
+    <div id="scrollIndicator">▼</div>
+    <div id="socials">
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="bluesky" href="https://bsky.app/profile/prog.gay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/bluesky.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="steam" href="https://steamcommunity.com/id/progdotgay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/steam.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="tumblr" href="https://proggay.tumblr.com/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/tumblr.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="github" href="https://github.com/progamer63"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/github-light.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="last.fm" href="https://www.last.fm/user/progamer63"><img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/last-fm.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" data-tooltip="listenbrainz" href="https://listenbrainz.org/user/progdotgay/"><img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/listenbrainz.svg"></a>
+    </div>
+</div>
+<div id="rightpanel">
+    <div id="info">
+        <h2 id="copyright">©2026 prog.gay</h2>
+        <h2 id="updated">updated: 7/31/2026</h2>
+    </div>
+    <div id="widgets">
+        <div id="interests" class="widget">
+            <h3>interests (not comprehensive) (of the technology type)</h3>
+            <ul>
+                <li>SBCs</li>
+                <li>linux</li>
+                <li>homelab</li>
+                <li>web design<span class="tinyText">(html/css/js) (not react.js)</span></li>
+                <li>wireshark</li>
+                <li>network engineering</li>
+                <li>self-hosting</li>
+                <li>3D modeling/printing</li>
+            </ul>
+        </div>
+        <!-- this was a good idea but i need to figure out ci/cd to do this myself i think
+            lastcollage dont retain images for more than a few hours (good thing)
+            simplest solution is to just make an action to download the updated
+            image weekly & throw it in site-images probably
+        <div id="albumcovers" class="widget">
+            <h2>recent top albums</h2>
+            <img src="https://lastcollage.io/api/collage/0d128055df13872d47fa20e5b358165edf59cb43">
+        </div>
+        -->
+    </div>
+    <div id="lastfmwidget">
+    <script src="fetch.js"></script>
+        <h2 id="tag">uno momento</h2>
+        <div id="songInfo">
+            <div id="album">correct horse battery staple</div>
+            <div id="song">guh?</div>
+            <div id="artist">if nothing shows, something broke</div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
