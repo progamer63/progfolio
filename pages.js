@@ -57,7 +57,7 @@ const pages = {
     games:`i play video games yes i do that<br class="spacer">
     some i play: ultrakill, sledding game, flock around, beamng.drive, minecraft, mini motorways, upload labs, bloons td6, balatro, trackmania,
     skate 3, deltarune<br class="spacer">
-    i did recently get a steam deck, and that's really changed how i play games. i find myself enjoying what i play more on deck than on my pc. it's really nice to have a do everything device like that.<br>
+    i got a steam deck in late 2025, and that's really changed how i play games. i find myself enjoying what i play more on deck than on my pc. it's really nice to have a do everything device like that.<br>
     it's loaded with emulators and roms, and around 50 games from my steam library. it's great for killing time while out waiting, or for relaxing anywhere i want to.<br class="spacer">
     i might get the steam controller. can't really justify $100 on a controller i might not like. i want the trackpads, but idk.<br>
     i infact did buy the steam controller. it's peak. got the purchase email, bought it within minutes. have used it a good amount every day.<br class="spacer">
@@ -67,10 +67,18 @@ const pages = {
     these pages are based on an old codebase, so the visual style will be very much different. i might update them one day,
     but for now they exist like this.`,
     photos: `
-    occasionally, i do some photography. usually, i just have my phone. however, i do have a canon t8i with the stock kit lens. i also have a 300mm something lens for it.<br>
-    i don't take photos that often anymore, a lot of what i have are from a photography class i took a few years ago.
+    some of these photos are from a class i took a few years ago. recently, i've started to take more photos again.<br>
+    i have a canon t8i with an 18-55mm, and a 70-300mm. i also have a pixel 9 pro. shoot raw, always. edited in rapidRAW. send.<br>
+    i also got some dji mic minis, and a smallrig rgb light thing. hope to do more video sometime? want to learn it, but i still prefer photography.
     <br class=spacer>
     <div id="photogrid" oncontextmenu="return disableRightClick();">
+    <div class="photo"><img class="photo" src="files/PXL_20261017_041550631.RAW-01.jpg"></div>
+    <div class="photo"><img class="photo" src="files/IMG_1695.jpg"></div>
+    <div class="photo"><img class="photo" src="files/PXL_20261017_042011514.RAW-02.ORIGINAL.jpg"></div>
+    <div class="photo"><img class="photo" src="files/PXL_20261017_041119325.RAW-02.ORIGINAL.jpg"></div>
+    <div class="photo"><img class="photo" src="files/IMG_1987.jpg"></div>
+    <div class="photo"><img class="photo" src="files/PXL_20261017_000223908.RAW-02.ORIGINAL.jpg"></div>
+    <div class="photo"><img class="photo" src="files/PXL_20261017_043133837.RAW-02.ORIGINAL.jpg"></div>
     <div class="photo"><img class="photo" src="files/takanaka1.jpg"></div>
     <div class="photo"><img class="photo" src="files/takanaka2.jpg"></div>
     <div class="photo"><img src="files/1467ecomp.jpg"></div>
@@ -85,6 +93,13 @@ const pages = {
     </div>`,
     changes:`
     <h2 id="changes">
+        11/4/2026:
+        <ul>
+            <li>add photo viewer, click a photo and see it large</li>
+            <li>add geese photos</li>
+            <li>reorganize photos, change photography text</li>
+            <li>reword games page</li>
+            <li>more splashes</li>
         7/21/2026:
         <ul>
             <li>actual widget now!</li>

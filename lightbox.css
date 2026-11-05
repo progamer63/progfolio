@@ -1,0 +1,112 @@
+/* ---------- lightbox ---------- */
+#lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(8px);
+
+    /* closed: invisible and not clickable, but still in the layout so it can fade */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    /* fade out, then hide once the fade is done */
+    transition: opacity 0.25s ease, visibility 0s linear 0.25s;
+}
+
+#lightbox.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /* fade in: show immediately, then fade */
+    transition: opacity 0.25s ease, visibility 0s;
+}
+
+/* the filmstrip: every photo side by side, slid with translateX */
+#lb-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    will-change: transform;
+}
+
+.lb-slide {
+    flex: 0 0 100vw;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* photos that aren't centered are dimmed, and fade as they slide in/out */
+    opacity: 0.15;
+    transition: opacity 0.32s ease;
+}
+
+.lb-slide.active { opacity: 1; }
+
+.lb-slide img {
+    max-width: 90vw;
+    max-height: 88vh;
+    object-fit: contain;
+    border: solid white 4px;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#lightbox button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 64px;
+    cursor: pointer;
+    padding: 0 20px;
+    transition: color 0.2s ease;
+}
+
+#lightbox button:hover { color: rgb(246, 132, 240); }
+
+#lb-prev { left: 0; top: 50%; transform: translateY(-50%); }
+#lb-next { right: 0; top: 50%; transform: translateY(-50%); }
+#lb-close { top: 10px; right: 10px; font-size: 36px; }
+
+/* photo number: top left, so the bottom is free for the info line */
+#lb-count {
+    position: absolute;
+    z-index: 2;
+    top: 18px;
+    left: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+/* exif line: centered under the photo */
+#lb-info {
+    position: absolute;
+    z-index: 2;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#lb-info.show { opacity: 1; }
+
+/* grid thumbnails: no dragging out */
+#photogrid img {
+    -webkit-user-drag: none;
+    user-select: none;
+    cursor: pointer;
+}
